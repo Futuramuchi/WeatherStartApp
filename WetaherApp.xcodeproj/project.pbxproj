@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		CE1963DD2705C66800EB0235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1963DC2705C66800EB0235 /* Assets.xcassets */; };
 		CE1963E02705C66800EB0235 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1963DF2705C66800EB0235 /* Preview Assets.xcassets */; };
 		CE1963E32705C66800EB0235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1963E12705C66800EB0235 /* LaunchScreen.storyboard */; };
+		CE1963ED2705CB7400EB0235 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE1963EC2705CB7400EB0235 /* Alamofire */; };
+		CE1963F12705CBCA00EB0235 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE1963F02705CBCA00EB0235 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1963F12705CBCA00EB0235 /* SwiftyJSON in Frameworks */,
+				CE1963ED2705CB7400EB0235 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,10 @@
 			dependencies = (
 			);
 			name = WetaherApp;
+			packageProductDependencies = (
+				CE1963EC2705CB7400EB0235 /* Alamofire */,
+				CE1963F02705CBCA00EB0235 /* SwiftyJSON */,
+			);
 			productName = WetaherApp;
 			productReference = CE1963D02705C66800EB0235 /* WetaherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +129,10 @@
 				Base,
 			);
 			mainGroup = CE1963C72705C66800EB0235;
+			packageReferences = (
+				CE1963EB2705CB7400EB0235 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE1963EF2705CBCA00EB0235 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = CE1963D12705C66800EB0235 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -347,6 +359,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE1963EB2705CB7400EB0235 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+		CE1963EF2705CBCA00EB0235 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE1963EC2705CB7400EB0235 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE1963EB2705CB7400EB0235 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CE1963F02705CBCA00EB0235 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE1963EF2705CBCA00EB0235 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CE1963D92705C66800EB0235 /* WetaherApp.xcdatamodeld */ = {
